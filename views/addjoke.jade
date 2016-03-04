@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+ p Add your joke here:
+ form(name="addajoke", method ="post", action="/storejoke")
+    div.input
+        input(type="text", name="joke")
+
+ br
+ a(href='/') Home
